@@ -2,19 +2,20 @@
 
 A [Quartz](https://quartz.jzhao.xyz) v5 plugin for pages with lots of images.
 
-- **Lightbox** — click any image in a note to see it full size. Step through
-  every image on the page with ← / →, swipe, or the on-screen arrows; Esc or a
-  click closes it. Images that are links keep working as links.
+- **Lightbox** — click an image in a note to see it full size. Step through
+  every image on the page with ← / →, swipe, or on-screen arrows; Esc or a
+  click closes it.
 - **Filmstrip view** — on pages you choose, a *Filmstrip view* button shows
   every photo at full screen height in one sideways-scrolling row. The mouse
-  wheel and arrow keys scroll it; Esc closes it.
+  wheel and arrow keys scroll it; Esc or the hand ""X" button closes it.
 
-The filmstrip is **opt-in for visitors**: nothing changes until someone clicks
-the button. Their choice is remembered in their own browser (they get the
-filmstrip on photo pages until they close it again). Nobody else is affected.
+The filmstrip is **opt-in for visitors**, until someone clicks
+the button, nothing changes. Their choice is remembered in their own browser, they get the
+filmstrip on photo pages until they close it again.
 
-Works with Quartz's SPA navigation. No dependencies and no build step.
+Works with Quartz's SPA navigation. No dependencies or build step.
 
+## Quick n dirty "what it looks like"
 <table>
   <tr>
     <th>Desktop</th>
@@ -45,7 +46,7 @@ plugins:
 
 ## Choosing which pages get the filmstrip
 
-Add `filmstrip: true` to a note's frontmatter:
+Just add `filmstrip: true` to a note's frontmatter:
 
 ```yaml
 ---
@@ -53,6 +54,7 @@ title: Bristol Street Jam 2025
 filmstrip: true
 ---
 ```
+<img width="405" height="110" alt="image" src="https://github.com/user-attachments/assets/cc252e91-aa9a-4ae4-a3ec-c8a6c7d3f6ce" />
 
 The button appears on that page if it has at least one image. To use a
 different frontmatter key:
@@ -67,8 +69,7 @@ different frontmatter key:
 - The filmstrip lazy-loads, so only the photos near the viewport are fetched.
 - The lightbox's `<dialog>` approach comes from
   [vazome/quartz-image-zoom](https://github.com/vazome/quartz-image-zoom) (MIT).
-  This version recreates the dialog after SPA navigation, adds prev/next, and
-  skips linked images.
+  This version recreates the dialog after SPA navigation, adds prev/next
 
 ## Licence
 

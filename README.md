@@ -1,6 +1,6 @@
 # quartz-photo-view
 
-A [Quartz](https://quartz.jzhao.xyz) v5 plugin for sites with lots of photos.
+A [Quartz](https://quartz.jzhao.xyz) v5 plugin for pages with lots of images.
 
 - **Lightbox** — click any image in a note to see it full size. Step through
   every image on the page with ← / →, swipe, or the on-screen arrows; Esc or a

@@ -1,0 +1,46 @@
+{
+  "name": "quartz-photo-view",
+  "version": "1.0.0",
+  "description": "Click-to-zoom lightbox for every image, plus an opt-in full-height filmstrip view on pages you choose",
+  "type": "module",
+  "license": "MIT",
+  "main": "./dist/index.js",
+  "exports": {
+    ".": "./dist/index.js",
+    "./package.json": "./package.json"
+  },
+  "quartz": {
+    "name": "photo-view",
+    "displayName": "Photo View",
+    "category": "transformer",
+    "version": "1.0.0",
+    "quartzVersion": ">=5.0.0",
+    "dependencies": [],
+    "defaultOrder": 60,
+    "defaultEnabled": true,
+    "defaultOptions": {
+      "frontmatterKey": "filmstrip"
+    }
+  },
+  "author": "Doghouse-Mike",
+  "homepage": "https://github.com/Doghouse-Mike/quartz-photo-view",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Doghouse-Mike/quartz-photo-view"
+  },
+  "keywords": [
+    "quartz",
+    "quartz-plugin",
+    "lightbox",
+    "gallery",
+    "photos"
+  ],
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=22"
+  }
+}

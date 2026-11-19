@@ -56,11 +56,16 @@ dialog.pv-lightbox, dialog.pv-lightbox::backdrop { transition: opacity .2s ease;
 @starting-style {
   dialog.pv-lightbox[open], dialog.pv-lightbox[open]::backdrop { opacity: 0; }
 }
+/* An explicit viewport-sized box + object-fit, rather than intrinsic sizing:
+   iOS Safari shrank the auto-sized image to about half the screen width. */
 dialog.pv-lightbox img {
-  max-width: 94vw; max-height: 92vh; max-height: 92dvh;
-  width: auto; height: auto; object-fit: contain; cursor: zoom-out;
+  box-sizing: border-box; display: block;
+  width: 100vw; height: 100vh; height: 100dvh;
+  max-width: none; max-height: none; margin: 0; border-radius: 0; box-shadow: none;
+  padding: 3vh 3vw; object-fit: contain; cursor: zoom-out;
   touch-action: pan-y pinch-zoom;
 }
+@media (max-width: 800px) { dialog.pv-lightbox img { padding: 0; } }
 .pv-btn {
   position: fixed; z-index: 2; display: grid; place-items: center;
   width: 44px; height: 44px; padding: 0; border: 0; border-radius: 50%;

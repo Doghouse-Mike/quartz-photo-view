@@ -2,12 +2,12 @@
 
 A [Quartz](https://quartz.jzhao.xyz) v5 plugin for pages with lots of images.
 
-- **Lightbox** — click an image in a note to see it full size. Step through
+- **Lightbox** - click an image in a note to see it full size. Step through
   every image on the page with ← / →, swipe, or on-screen arrows; Esc or a
   click closes it.
-- **Filmstrip view** — on pages you choose, a *Filmstrip view* button shows
+- **Filmstrip view** - on pages you choose, a *Filmstrip view* button shows
   every photo at full screen height in one sideways-scrolling row. The mouse
-  wheel and arrow keys scroll it; Esc or the hand ""X" button closes it.
+  wheel and arrow keys scroll it; Esc or the hand "X" button closes it.
 
 The filmstrip is **opt-in for visitors**, until someone clicks
 the button, nothing changes. Their choice is remembered in their own browser, they get the

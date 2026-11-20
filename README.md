@@ -65,6 +65,9 @@ different frontmatter key:
 ```
 
 ## Notes
+- For anyone using the excellent [quartz-syncer](https://community.obsidian.md/plugins/quartz-syncer) plugin, you'll need to enable "Include all properties" within the plugin's settings, or the "filmstrip" key will be removed from the frontmatter before it gets published.
+ 
+  <img width="655" height="261" alt="image" src="https://github.com/user-attachments/assets/61a3f2fa-8a82-4c2e-a642-71dc0832cd86" />
 
 - The filmstrip lazy-loads, so only the photos near the viewport are fetched.
 - The lightbox's `<dialog>` approach comes from
